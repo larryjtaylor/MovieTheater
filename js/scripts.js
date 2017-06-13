@@ -21,6 +21,7 @@ $(document).ready(function(){
     // The Number() function converts the object argument to a number that represents the object's value.
     $("#results").append("<li>" + "Adult: $" + inputAdult + "</li>" + "<li>" + "Child: $" + inputChild + "</li>" + "<li>" + "Senior: $" + inputSenior + "</li>" + "<li>" + total + "</li>")
 
+    $("#prices").show();
     $("#purchase").show();
   });
 

@@ -1,24 +1,62 @@
+body {
+  background-color: darkslategray;
+}
 .jumbotron {
   text-align: center;
+  text-shadow: 3px 3px white;
+  background-image: url(../img/popcorn.jpg);
+  background-size: contain;
 }
-
+.jumbotron h1{
+  font-size: 100px;
+}
 .panel {
+  background-color: ivory;
   border: solid 1px;
   text-align: center;
+  height: 250px;
 }
 
-button{
-  align-items: center;
+.time{
+   text-align: center;
 }
 
 .well {
+  height: 575px;
+}
+
+#selections {
+  border: none;
   text-align: center;
+  background-color: lightseagreen;
+  background-image: url(../img/theatre.jpg);
+  background-size: 730px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 ul {
   list-style: none;
 }
 
+#prices {
+  background-image: url(../img/ticket.jpg);
+  background-size: contain;
+  display: none;
+  height: 300px;
+}
+
+#results, #purchase {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: ivory;
+  width: 30%;
+}
+#purchase{
+  margin-top: 20px;
+}
 .selectBox {
   width: 5%;
   display: block;
@@ -32,4 +70,6 @@ ul {
 
 #purchase{
   display: none;
+  display: block;
+  margin: auto;
 }
