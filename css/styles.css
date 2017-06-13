@@ -18,3 +18,14 @@ button{
 ul {
   list-style: none;
 }
+
+.selectBox {
+  width: 5%;
+  /*text-align: center;*/
+  display: block;
+  margin: auto;
+}
+
+/*.option {
+  text-align: center;
+}*/
