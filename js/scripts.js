@@ -6,22 +6,22 @@ this.movieTime = time;
 this.userAge = age;
 }
 
-// function showTickets(){
-//
-// }
 // UI logic
 $(document).ready(function(){
 
   $(".see-movie").submit(function(event) {
     console.log("working");
     event.preventDefault();
+// assigns value of selected number in select box.
     var inputAdult = document.getElementById("numberAdult").value;
-
     var inputChild = document.getElementById("numberChild").value;
-
     var inputSenior = document.getElementById("numberSenior").value;
 
-    var total = "Total: " + (Number(inputAdult) + Number(inputChild) + Number(inputSenior));
-    $("#results").append("<li>" + inputAdult + "</li>" + "<li>" + inputChild + "</li>" + "<li>" + inputSenior + "</li>" + "<li>" + total + "</li>")
+    var total = "Total: $" + (Number(inputAdult) + Number(inputChild) + Number(inputSenior));
+    // The Number() function converts the object argument to a number that represents the object's value.
+    $("#results").append("<li>" + "Adult: $" + inputAdult + "</li>" + "<li>" + "Child: $" + inputChild + "</li>" + "<li>" + "Senior: $" + inputSenior + "</li>" + "<li>" + total + "</li>")
+
+    $("#purchase").show();
   });
+
 });
