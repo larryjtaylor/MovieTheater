@@ -1,0 +1,20 @@
+.jumbotron {
+  text-align: center;
+}
+
+.panel {
+  border: solid 1px;
+  text-align: center;
+}
+
+button{
+  align-items: center;
+}
+
+.well {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
