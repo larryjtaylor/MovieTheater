@@ -1,9 +1,8 @@
 // business logic
 
-function Ticket (movie, time, age) {
+function Ticket (movie, time) {
 this.movieName = movie;
 this.movieTime = time;
-this.userAge = age;
 }
 
 // UI logic
@@ -17,9 +16,9 @@ $(document).ready(function(){
     var inputChild = document.getElementById("numberChild").value;
     var inputSenior = document.getElementById("numberSenior").value;
 
-    var total = "Total: $" + (Number(inputAdult) + Number(inputChild) + Number(inputSenior));
+    var total = (Number(inputAdult) + Number(inputChild) + Number(inputSenior));
     // The Number() function converts the object argument to a number that represents the object's value.
-    $("#results").append("<li>" + "Adult: $" + inputAdult + "</li>" + "<li>" + "Child: $" + inputChild + "</li>" + "<li>" + "Senior: $" + inputSenior + "</li>" + "<li>" + total + "</li>")
+    $("#results").append("<li>" + "Adult: $" + inputAdult + "</li>" + "<li>" + "Child: $" + inputChild + "</li>" + "<li>" + "Senior: $" + inputSenior + "</li>" + "<li>" + "Total: $" + total + "</li>")
 
     $("#prices").show();
     $("#purchase").show();

@@ -10,23 +10,29 @@ body {
 .jumbotron h1{
   font-size: 100px;
 }
-.panel {
-  background-color: ivory;
-  border: solid 1px;
-  text-align: center;
-  height: 250px;
+
 }
 
 .time{
    text-align: center;
 }
 
-.well {
-  height: 575px;
+#showing{
+  height: 275px;
+  background-color: ivory;
+}
+
+.movieTime {
+text-align: center;
+margin:auto;
+padding:0%;
+position: absolute;
+ left: 0; bottom: 15%; right: 0;
 }
 
 #selections {
   border: none;
+  height: 575px;
   text-align: center;
   background-color: lightseagreen;
   background-image: url(../img/theatre.jpg);
